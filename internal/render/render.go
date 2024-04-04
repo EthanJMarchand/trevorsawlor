@@ -7,6 +7,7 @@ import (
 	"net/http"
 )
 
+// Render's templates using html/templates
 func RenderTemplate(w http.ResponseWriter, tmpl string) {
 	parsedTemplate, err := template.ParseFiles("./internal/templates/" + tmpl)
 	if err != nil {
